@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1642721184 source:/home/jf/Documentos/U/7/Samsung/C/odd/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
