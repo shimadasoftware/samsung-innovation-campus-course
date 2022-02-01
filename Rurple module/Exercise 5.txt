@@ -1,0 +1,70 @@
+"""
+Samsung Innovation Campus
+Arrange the numbers in order.
+@author: Juana Valentina Mendoza Santamaría
+         juana.mendoza@usantoto.edu.co
+06 December 2021
+  _________
+ /   _____/____    _____   ________ __  ____    ____
+ \_____  \\__  \  /     \ /  ___/  |  \/    \  / ___\
+ /        \/ __ \|  Y Y  \\___ \|  |  /   |  \/ /_/  >
+/_______  (____  /__|_|  /____  >____/|___|  /\___  /
+        \/     \/      \/     \/           \//_____/
+"""
+print 'Welcome to exercise #05!'
+
+def locate():
+    repeat(move, 4)
+    turn_left()
+    repeat(move, 2)
+    repeat(turn_left, 3)
+
+def getBeeper():
+    move()
+    count = 0
+    while on_beeper():
+        pick_beeper()
+        count += 1
+    repeat(turn_left, 2)
+    move()
+    repeat(turn_left, 3)
+    move()
+    repeat(turn_left, 3)
+    return count
+
+def relocate():
+    repeat(turn_left, 3)
+    repeat(move, 2)
+    turn_left()
+
+def putBeeper(beepers):
+    move()
+    count = 0
+    while count < beepers:
+        put_beeper()
+        count += 1
+    repeat(turn_left, 2)
+    move()
+    turn_left()
+    move()
+    turn_left()
+
+locate()
+beepers = []
+count = -1
+while count != 0:
+    count = getBeeper()
+    if count == 0:
+        break
+    beepers.append(count)
+
+#print beepers
+
+relocate()
+
+beepers.sort()
+
+for cell in beepers:
+    putBeeper(cell)
+
+turn_off()
