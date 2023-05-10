@@ -1,0 +1,22 @@
+Materiales:
+  2 Resistencias -> 330 Ohm (naranja, naranja, cafe)
+  2 Leds -> larga (anodo +), corta (cátodo -)
+  Cable conectado de 5V a positivo
+  Cable conectado de GND a negativo
+  Cable conectado de 2 a resistencia
+  Cable conectado de 13 a resistencia
+
+Código:
+  void setup() {
+    pinMode(2, OUTPUT);
+    pinMode(13, OUTPUT);
+  }
+
+  void loop() {
+    digitalWrite(2, HIGH);
+    digitalWrite(13, LOW);
+    delay(1000);
+    digitalWrite(2, LOW);
+    digitalWrite(13, HIGH);
+    delay(1000);
+}
