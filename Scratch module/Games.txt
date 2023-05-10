@@ -1,1 +1,20 @@
+A continuación, se presenta la lista de los juegos realizados para el modulo de Scratch:
+
+1. Recorrer diferentes mundos:
+  https://scratch.mit.edu/projects/590338808
+
+2. Juego de laberintos:
+  https://scratch.mit.edu/projects/589959473
+  
+3. Juego para practicar el idioma inglés:
+  https://scratch.mit.edu/projects/593916070
+
+4. Juego para practicar con instrumentos musicales:
+  https://scratch.mit.edu/projects/595315026
+  
+5. Juego "atrápame":
+  https://scratch.mit.edu/projects/591317049
+  
+6. Proyecto final: Juego Pacman
+  https://scratch.mit.edu/projects/600796272
 
