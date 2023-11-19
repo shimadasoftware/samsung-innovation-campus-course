@@ -17,7 +17,7 @@ A continuación, se enumeran los módulos de este curso:
 
 - IA: Principios y Fundamentos
 
-  - Capitulo 1: [Introducción a la Inteligencia Artificial] 
+  - Capitulo 1: Introducción a la Inteligencia Artificial 
   - Capitulo 2: [Matemáticas para Ciencia de Datos](./resources/Chapter%202.ipynb) 
   - Capitulo 3: 
     - Unidad 1: [NumPy Arrays: computacion numérica optimizada y pandas: analisis exploratorio de datos](./resources/Chapter%203%20parte%201.ipynb) 
