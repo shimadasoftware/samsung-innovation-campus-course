@@ -91,4 +91,4 @@ A continuación, se enumeran los módulos de este curso:
     - Unidad 39: [Miniproyecto de análisis de datos financieros](./resources/Unidad39.ipynb)
     - Unidad 40: [Miniproyecto de análisis de de la pandemia de COVID-19](./resources/Unidad40.ipynb)
 
-- [Hackaton]((./hackaton))
+- [Hackaton](./hackaton)
