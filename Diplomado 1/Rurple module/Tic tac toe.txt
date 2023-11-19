@@ -1,0 +1,149 @@
+"""
+Samsung Innovation Campus
+Tic-Tac-Toe Game Program
+@author: Juana Valentina Mendoza Santamaría
+         juana.mendoza@usantoto.edu.co
+06 December 2021
+  _________
+ /   _____/____    _____   ________ __  ____    ____
+ \_____  \\__  \  /     \ /  ___/  |  \/    \  / ___\
+ /        \/ __ \|  Y Y  \\___ \|  |  /   |  \/ /_/  >
+/_______  (____  /__|_|  /____  >____/|___|  /\___  /
+        \/     \/      \/     \/           \//_____/
+"""
+
+def initGame():
+    """ Init the game variables.
+    """
+    ttt = [
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+    ]
+    player = 1
+    return ttt, player
+
+def readNames():
+    """ Read the player names.
+    """
+    print 'Welcome to Tic-Tac-Toe Game Program!'
+
+    print 'Please, player number 1 type your name:'
+    name1 = input_string()
+
+    print 'Please, player number 2 type your name:'
+    name2 = input_string()
+
+    return [name1, name2]
+
+def endGame(ttt, names):
+    """ Check if the game finished.
+    """
+    player = isWinner(ttt)
+    if player > 0:
+        print 'Congratulations player', names[player - 1], 'you have won.'
+        return True
+    if player == -1:
+        print 'Tied game!'
+        return True
+
+    return False
+
+def isWinner(ttt):
+    """ Check who is the winner, or tie game.
+    """
+    for i in range(3):          # By rows
+        if ttt[i][0] == ttt[i][1] and ttt[i][0] == ttt[i][2]:
+            return ttt[i][0]
+
+    for i in range(3):          # By columns
+        if ttt[0][i] == ttt[1][i] and ttt[0][i] == ttt[2][i]:
+            return ttt[0][i]
+
+    if ttt[1][1] == ttt[0][0] and ttt[1][1] == ttt[2][2]:   # \
+        return ttt[1][1]
+
+    if ttt[1][1] == ttt[0][2] and ttt[1][1] == ttt[2][0]:   # /
+        return ttt[1][1]
+
+    tie = True                  # Check the tie game...
+    for row in range(3):
+        for column in range(3):
+            if ttt[row][column] == 0:
+                tie = False
+                break
+        if not tie:
+            break
+
+    return -1 if tie else 0     # -1: Tie game, 0: Go on
+
+def play(ttt, player, names):
+    """ Play a movement.
+    """
+    row, column = move(ttt, player, names)
+    ttt[row][column] = player
+    mark(ttt, player, row, column)
+
+def mark(ttt, player, street, avenue):
+    """ Push the beeper (1 or 2) in the cell.
+    """
+    r1 = UsedRobot(
+        avenues = 4 + avenue,
+        streets = 8 - street,
+        beepers = 18,
+        colour = 'purple',
+        name = 'robot1'
+    )
+    r1.put_beeper()
+    if (ttt[street][avenue] == 2):
+        r1.put_beeper()
+
+def move(ttt, player, names):
+    """ Read the coordinates (row, column) of the movement.
+    """
+    while True:
+        print 'Player ', names[0] if player == 1 else names[1], ' is your turn.'
+
+        row = -1                                # Row
+        while row < 0 or row > 3:
+            print 'Row (1 - 3): '
+            row = input_int()
+
+        column = -1                             # Column
+        while column < 0 or column > 3:
+            print 'Column (1 - 3): '
+            column = input_int()
+
+        if ttt[row - 1][column - 1] == 0:       # Is the cell empty?
+            return row - 1, column - 1
+
+def clean():
+    """ Remove all beepers.
+    """
+    global r1
+    for i in range(3):
+        for j in range(3):
+            r1 = UsedRobot(
+                avenues = i + 4,
+                streets = 8 - j,
+                orient_key = 'E',
+                beepers = 0,
+                colour = 'green',
+                name = 'robot1'
+            )
+            while r1.on_beeper():
+                r1.pick_beeper()
+    r1.move()
+
+def main():
+    """ Main method of the TicTacToe game.
+    """
+    ttt, player = initGame()
+    names = readNames()
+    while not endGame(ttt, names):
+        play(ttt, player, names)
+        player = 2 if player == 1 else 1
+    clean()
+    r1.turn_off()
+
+main()

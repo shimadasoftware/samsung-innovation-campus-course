@@ -1,0 +1,222 @@
+"""
+Samsung Innovation Campus
+Program that draws a number entered by the user.
+@author: Juana Valentina Mendoza Santamaría
+         juana.mendoza@usantoto.edu.co
+06 December 2021
+  _________
+ /   _____/____    _____   ________ __  ____    ____
+ \_____  \\__  \  /     \ /  ___/  |  \/    \  / ___\
+ /        \/ __ \|  Y Y  \\___ \|  |  /   |  \/ /_/  >
+/_______  (____  /__|_|  /____  >____/|___|  /\___  /
+        \/     \/      \/     \/           \//_____/
+"""
+print 'Welcome to exercise #03!'
+
+def turn_right():
+    repeat(turn_left, 3)
+
+def numberZero():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'N',
+        colour = 'purple',
+        name = 'robot'
+    )
+    for i in range(2):
+        repeat(robot.move, 2)
+        turn_right()
+        robot.move()
+        turn_right()
+    robot.turn_off()
+
+def numberOne():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'N',
+        colour = 'purple',
+        name = 'robot'
+    )
+    repeat(robot.move, 2)
+    robot.turn_off()
+
+def numberTwo():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'E',
+        colour = 'purple',
+        name = 'robot'
+    )
+    robot.move()
+    repeat(robot.turn_left, 2)
+    robot.move()
+    turn_right()
+    robot.move()
+    turn_right()
+    robot.move()
+    turn_left()
+    robot.move()
+    turn_left()
+    robot.move()
+    robot.turn_off()
+
+def numberThree():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'E',
+        colour = 'purple',
+        name = 'robot'
+    )
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    repeat(robot.turn_left, 2)
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    robot.turn_left()
+    robot.move()
+
+    robot.turn_off()
+
+def numberFour():
+    robot = UsedRobot(
+        avenues = 2,
+        streets = 1,
+        orient_key = 'N',
+        colour = 'purple',
+        name = 'robot'
+    )
+    repeat(robot.move, 2)
+    repeat(robot.turn_left, 2)
+    robot.move()
+    turn_right()
+    robot.move()
+    turn_right()
+    robot.move()
+
+    robot.turn_off()
+
+def numberFive():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'E',
+        colour = 'purple',
+        name = 'robot'
+    )
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    turn_right()
+    robot.move()
+    turn_right()
+    robot.move()
+
+    robot.turn_off()
+
+def numberSix():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'E',
+        colour = 'purple',
+        name = 'robot'
+    )
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    robot.turn_left()
+    robot.move()
+    repeat(robot.turn_left, 2)
+    repeat(robot.move, 2)
+    turn_right()
+    robot.move()
+
+    robot.turn_off()
+
+def numberSeven():
+    robot = UsedRobot(
+        avenues = 2,
+        streets = 1,
+        orient_key = 'N',
+        colour = 'purple',
+        name = 'robot'
+    )
+    repeat(robot.move, 2)
+    robot.turn_left()
+    robot.move()
+
+    robot.turn_off()
+
+def numberEight():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'N',
+        colour = 'purple',
+        name = 'robot'
+    )
+    for i in range(2):
+        repeat(robot.move, 2)
+        turn_right()
+        robot.move()
+        turn_right()
+    for i in range(2):
+        robot.move()
+        turn_right()
+
+    robot.turn_off()
+
+def numberNine():
+    robot = UsedRobot(
+        avenues = 1,
+        streets = 1,
+        orient_key = 'E',
+        colour = 'purple',
+        name = 'robot'
+    )
+    robot.move()
+    robot.turn_left()
+    repeat(robot.move, 2)
+    for i in range(3):
+        robot.turn_left()
+        robot.move()
+
+    robot.turn_off()
+
+print 'Please, give me a digit (0 - 9):'
+number = input_int()
+
+if number == 0:
+    numberZero()
+elif number == 1:
+    numberOne()
+elif number == 2:
+    numberTwo()
+elif number == 3:
+    numberThree()
+elif number == 4:
+    numberFour()
+elif number == 5:
+    numberFive()
+elif number == 6:
+    numberSix()
+elif number == 7:
+    numberSeven()
+elif number == 8:
+    numberEight()
+elif number == 9:
+    numberNine()
+
+

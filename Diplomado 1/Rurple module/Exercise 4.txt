@@ -1,0 +1,55 @@
+"""
+Samsung Innovation Campus
+Create a program to decrypt and differentiate between two Morse messages.
+The first: SOS
+The second: OK
+@author: Juana Valentina Mendoza Santamaría
+         juana.mendoza@usantoto.edu.co
+06 December 2021
+  _________
+ /   _____/____    _____   ________ __  ____    ____
+ \_____  \\__  \  /     \ /  ___/  |  \/    \  / ___\
+ /        \/ __ \|  Y Y  \\___ \|  |  /   |  \/ /_/  >
+/_______  (____  /__|_|  /____  >____/|___|  /\___  /
+        \/     \/      \/     \/           \//_____/
+"""
+print 'Welcome to exercise #04!'
+
+def locate():
+    turn_left()
+    repeat(move, 2)
+    repeat(turn_left, 3)
+
+def detectLetter():
+    letter = ''
+    while not left_is_clear() or on_beeper():
+        if not left_is_clear():
+            letter += '-'
+        if on_beeper():
+            letter += '.'
+        move()
+    return letter
+
+def toMorse(sentence):
+    message = ''
+    for letter in sentence:
+        message += morse[letter]
+    return message
+
+morse = {
+    '-.-': 'K',
+    '---': 'O',
+    '...': 'S',
+}
+
+locate()
+
+sentence = []
+while not left_is_clear() or on_beeper():
+    sentence.append(detectLetter())
+    move()
+
+print 'Morse code: ', sentence
+print 'Message: ', toMorse(sentence)
+
+turn_off()

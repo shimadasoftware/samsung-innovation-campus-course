@@ -1,0 +1,32 @@
+Materiales:
+  2 Resistencias -> 330 Ohm (naranja, naranja, cafe)
+  1 Resistencia  -> 300 Ohm (naranja, negra, cafe)
+  2 Leds -> larga (ánodo +), corta (cátodo -)
+  1 pulsador
+  Cable conectado de 5V a positivo
+  Cable conectado de GND a negativo
+  Cable conectado de 2 a resistencia
+  Cable conectado de 13 a resistencia
+  Cable conectado de 7 a pulsador
+
+Código:
+  int pulsador;
+
+  void setup() {
+    pinMode(2, OUTPUT);
+    pinMode(7, INPUT);
+    pinMode(13, OUTPUT);
+  }
+
+  void loop() {
+    pulsador = digitalRead(7);
+
+    if (pulsador == 0) {
+      digitalWrite(2, HIGH);
+      digitalWrite(13, LOW);
+    }
+    else {
+      digitalWrite(2, LOW);
+      digitalWrite(13, HIGH);
+    }
+  }

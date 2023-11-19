@@ -1,0 +1,61 @@
+"""
+Samsung Innovation Campus
+Program that follows the contours and determines a vowel.
+@author: Juana Valentina Mendoza Santamaría
+         juana.mendoza@usantoto.edu.co
+06 December 2021
+  _________
+ /   _____/____    _____   ________ __  ____    ____
+ \_____  \\__  \  /     \ /  ___/  |  \/    \  / ___\
+ /        \/ __ \|  Y Y  \\___ \|  |  /   |  \/ /_/  >
+/_______  (____  /__|_|  /____  >____/|___|  /\___  /
+        \/     \/      \/     \/           \//_____/
+"""
+print 'Welcome to exercise #02!'
+
+robot = UsedRobot(
+            avenues = 2,
+            streets = 3,
+            orient_key = 'N',
+            beepers = 1,
+            colour = 'purple',
+            name = 'robot'
+        )
+
+turns = 0
+vowel = []
+robot.put_beeper()
+while True:
+    if not front_is_clear():
+        robot.turn_left()
+        turns += 1
+        vowel.append('F')
+        robot.move()
+    elif not right_is_clear():
+        vowel.append('M')
+        robot.move()
+    elif right_is_clear():
+        repeat(robot.turn_left, 3)
+        turns += 1
+        vowel.append('E')
+        robot.move()
+    if robot.on_beeper():
+        robot.pick_beeper()
+        print 'Finished it'
+        break
+
+if turns == 4:
+    print 'O'
+if turns == 8:
+    if len(vowel) == 20:
+        print 'A'
+    else:
+        print 'U'
+if turns == 12:
+    if len(vowel) == 22:
+        print 'E'
+    else:
+        print 'I'
+robot.turn_off()
+
+
