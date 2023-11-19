@@ -21,7 +21,7 @@ Scratch es la comunidad más grande de codificación para niños y un lenguaje d
 
 [Scratch](https://scratch.mit.edu/about) promueve la mentalidad computacional y las habilidades de resolución de conflictos; expresión propia y colaboración; y la equidad en la computación.
 
-![image](https://github.com/shimadasoftware/samsung-innovation-campus-course/assets/73977456/fa1fd671-428b-4cc8-be73-6e50cb19f475)
+<img src="https://github.com/shimadasoftware/samsung-innovation-campus-course/assets/73977456/fa1fd671-428b-4cc8-be73-6e50cb19f475" alt="Italian Trulli" style="width:300px;height:200px;"> 
 
 - Scratch Hardware
 
@@ -38,7 +38,7 @@ RUR - Python Learning Environment es una herramienta educativa para ayudar a los
 
 C es un lenguaje de programación de propósito general​ originalmente desarrollado por Dennis Ritchie entre 1969 y 1972 en los Laboratorios Bell, ​ como evolución del anterior lenguaje B, a su vez basado en BCPL.​​​Al igual que B, es un lenguaje orientado a la implementación de sistemas operativos, concretamente Unix.
 
-![image](https://github.com/shimadasoftware/samsung-innovation-campus-course/assets/73977456/e13d248b-2bb4-4f34-ba91-25fbc29243a7)
+<img src="https://github.com/shimadasoftware/samsung-innovation-campus-course/assets/73977456/e13d248b-2bb4-4f34-ba91-25fbc29243a7" alt="Italian Trulli" style="width:200px;height:200px;"> 
 
 #### Arduino 
 
@@ -47,7 +47,7 @@ C es un lenguaje de programación de propósito general​ originalmente desarro
 Es una placa de circuito programable de código abierto que se puede integrar en una amplia variedad de proyectos makerspace, tanto simples como complejos. Esta placa contiene un microcontrolador que se puede programar para detectar y controlar objetos en el mundo físico.
 Al responder a sensores y entradas, Arduino puede interactuar con una gran variedad de salidas, como LED, motores y pantallas.
 
-![image](https://github.com/shimadasoftware/samsung-innovation-campus-course/assets/73977456/40dee827-a88a-41ea-91ca-4765231e4f53)
+<img src="https://github.com/shimadasoftware/samsung-innovation-campus-course/assets/73977456/40dee827-a88a-41ea-91ca-4765231e4f53" alt="Italian Trulli" style="width:200px;height:200px;"> 
 
 - Arduino Software
 
