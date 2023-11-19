@@ -17,70 +17,76 @@ A continuación, se enumeran los módulos de este curso:
 
 - Modulo 1:
 
-  - Capitulo 1: Conceptos Básicos de programación e inicio de Python
+  - Capítulo 1: Conceptos Básicos de programación e inicio de Python
 
-    - Unidad 1: Programación Secuencial
-    - Unidad 2: Planificación para la programación
-    - Unidad 3: Tipos de datos numéricos y operaciones aritméticas
-    - Unidad 4: Variables y entradas
-    - Unidad 5: Lógica y operadores de comparación
-    - Unidad 6: Sentencias condicionales 1 - condiciones y toma de decisiones
-    - Unidad 7: Sentencias condicionales 2 - Tomando decisiones en dos direcciones y aplicación de declaraciones condicionales
-    - Unidad 8: Bucle-1
-    - Unidad 9: Bucle-2
+    - Unidad 1: [Programación Secuencial](./resources/Unidad01.ipynb)
+    - Unidad 2: [Planificación para la programación](./resources/Unidad02.ipynb)
+    - Unidad 3: [Tipos de datos numéricos y operaciones aritméticas](./resources/Unidad03.ipynb)
+    - Unidad 4: [Variables y entradas](./resources/Unidad04.ipynb)
+    - Unidad 5: [Lógica y operadores de comparación](./resources/Unidad05.ipynb)
+    - Unidad 6: [Sentencias condicionales 1 - condiciones y toma de decisiones](./resources/Unidad06.ipynb)
+    - Unidad 7: [Sentencias condicionales 2 - Tomando decisiones en dos direcciones y aplicación de declaraciones condicionales](./resources/Unidad07.ipynb)
+    - Unidad 8: [Bucle-1](./resources/Unidad08.ipynb)
+    - Unidad 9: [Bucle-2 ](./resources/Unidad09.ipynb)
+    - [Desarrollo Quizzes Capítulo 1](./quizzes%20notebooks/Samsung%20Innovation%20Quizzes.ipynb) 
 
-  - Capitulo 2: Programación básica de Python - Tipos de datos de secuencia en Python
+  - Capítulo 2: Programación básica de Python - Tipos de datos de secuencia en Python
 
-    - Unidad 10: Tipos de datos: lista y tupla
-    - Unidad 11: Tipos de datos: diccionario
-    - Unidad 12: Tipos de datos: secuencia
-    - Unidad 13: Listas 2D
-    - Unidad 14: Diccionario: Método 1
-    - Unidad 15: Diccionario: Método 2
-    - Unidad 16: Tipos de datos: Set
+    - Unidad 10: [Tipos de datos: lista y tupla](./resources/Unidad10.ipynb)
+    - Unidad 11: [Tipos de datos: diccionario](./resources/Unidad11.ipynb)
+    - Unidad 12: [Tipos de datos: secuencia](./resources/Unidad12.ipynb)
+    - Unidad 13: [Listas 2D](./resources/Unidad13.ipynb)
+    - Unidad 14: [Diccionario: Método 1](./resources/Unidad14.ipynb)
+    - Unidad 15: [Diccionario: Método 2](./resources/Unidad15.ipynb)
+    - Unidad 16: [Tipos de datos: Set](./resources/Unidad16.ipynb)
+    - [Desarrollo Quizzes Capítulo 2](./quizzes%20notebooks/Samsung%20Innovation%20Quizzes%20Chapter%202.ipynb)
+      
+  - Capítulo 3: Programación eficaz en Python: Función, Clausura y Clase
 
-  - Capitulo 3: Programación eficaz en Python: Función, Clausura y Clase
+    - Unidad 17: [Función](./resources/Unidad17.ipynb)
+    - Unidad 18: [Llamado Recursivo de una Función](./resources/Unidad18.ipynb)
+    - Unidad 19: [Lambda](./resources/Unidad19.ipynb)
+    - Unidad 20: [Clausura](./resources/Unidad20.ipynb)
+    - Unidad 21: [Clase](./resources/Unidad21.ipynb)
+    - [Desarrollo Quizzes Capítulo 3](./quizzes%20notebooks/Samsung%20Innovation%20Quizzes%20Chapter%203.ipynb)
 
-    - Unidad 17: Función
-    - Unidad 18: Llamado Recursivo de una Función
-    - Unidad 19: Lambda
-    - Unidad 20: Clausura
-    - Unidad 21: Clase
+- Módulo 2:
 
-Módulo 2:
+  - Capítulo 4: Algoritmos 1 - Estructuras de datos
 
-  - Capitulo 4: Algoritmos 1 - Estructuras de datos
+    - Unidad 22: [Stack](./resources/Unidad22.ipynb)
+    - Unidad 23: [Queue](./resources/Unidad23.ipynb)
+    - Unidad 24: [Búsqueda Secuencial](./resources/Unidad24.ipynb)
+    - Unidad 25: [Búsqueda Binaria](./resources/Unidad25.ipynb)
+    - Unidad 26: [Tabla Hash](./resources/Unidad26.ipynb)
+    - [Desarrollo Quizzes Capítulo 4](./quizzes%20notebooks/Samsung%20Innovation%20Quizzes%20Chapter%204.ipynb)
 
-    - Unidad 22: Stack
-    - Unidad 23: Queue
-    - Unidad 24: Búsqueda Secuencial
-    - Unidad 25: Búsqueda Binaria
-    - Unidad 26: Tabla Hash
+  - Capítulo 5: Algoritmos 2 - Algoritmos de Ordenamiento
 
-  - Capitulo 5: Algoritmos 2 - Algoritmos de Ordenamiento
+    - Unidad 27: [Ordenamiento por burbuja, selección e inserción](./resources/Unidad27.ipynb)
+    - Unidad 28: [Ordenamiento por mezcla (Merge Sort)](./resources/Unidad28.ipynb)
+    - Unidad 29: [Ordenamiento rápido (Quick Sort)](./resources/Unidad29.ipynb)
+    - [Quizzes Capítulo 5](./quizzes%20notebooks/Samsung%20Innovation%20Quizzes%20Chapter%205.ipynb)
+  
+  - Capítulo 6: Algoritmos 3 - Resolución de problemas con algoritmos
 
-    - Unidad 27: Ordenamiento por burbuja, selección e inserción
-    - Unidad 28: Ordenamiento por mezcla (Merge Sort)
-    - Unidad 29: Ordenamiento rápido (Quick Sort)
-
-  - Capitulo 6: Algoritmos 3 - Resolución de problemas con algoritmos
-
-    - Unidad 30: El algoritmo voraz (greedy approach)
-    - Unidad 31: El método divide y vencerás (divide-and-conquer)
-    - Unidad 32: El método de programación dinámica
-    - Unidad 33: El método vuelta atrás (backtracking)
-
+    - Unidad 30: [El algoritmo voraz (greedy approach)](./resources/Unidad30.ipynb)
+    - Unidad 31: [El método divide y vencerás (divide-and-conquer)](./resources/Unidad31.ipynb)
+    - Unidad 32: [El método de programación dinámica](./resources/Unidad32.ipynb)
+    - Unidad 33: [El método vuelta atrás (backtracking)](./resources/Unidad33.ipynb)
+    - [Desarrollo Quizzes Capítulo 6](./quizzes%20notebooks/Samsung%20Innovation%20Quizzes%20Chapter%206.ipynb)
+      
 - Módulo 3:
 
-  - Capitulo 7: Procesamiento de datos, estadísticas descriptivas y visualización de datos
+  - Capítulo 7: Procesamiento de datos, estadísticas descriptivas y visualización de datos
 
-    - Unidad 34: Uso de módulos en Python
-    - Unidad 35: Serie Pandas para el procesamiento de datos
-    - Unidad 36: Pandas DataFrame para el procesamiento de datos
-    - Unidad 37: Ordenamiento de datos (data tidying)
-    - Unidad 38: Datos de series de tiempo
+    - Unidad 34: [Uso de módulos en Python](./resources/Unidad34.ipynb)
+    - Unidad 35: [Serie Pandas para el procesamiento de datos](./resources/Unidad35.ipynb)
+    - Unidad 36: [Pandas DataFrame para el procesamiento de datos](./resources/Unidad36.ipynb)
+    - Unidad 37: [Ordenamiento de datos (data tidying)](./resources/Unidad37.ipynb)
+    - Unidad 38: [Datos de series de tiempo](./resources/Unidad38.ipynb)
     
-  - Capitulo 8: Mini proyecto de análisis y visualización de datos
+  - Capítulo 8: Mini proyecto de análisis y visualización de datos
     
-    - Unidad 39: Miniproyecto de análisis de datos financieros
-    - Unidad 40: Miniproyecto de análisis de de la pandemia de COVID-19
+    - Unidad 39: [Miniproyecto de análisis de datos financieros](./resources/Unidad39.ipynb)
+    - Unidad 40: [Miniproyecto de análisis de de la pandemia de COVID-19](./resources/Unidad40.ipynb)
