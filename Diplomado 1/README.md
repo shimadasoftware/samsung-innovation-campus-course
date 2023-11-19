@@ -7,7 +7,7 @@
 
 ### Objetivo: 
 
-Samsung Innovation Campus 2021 es una iniciativa de la compañía tecnológica, operada por Educación Continua de la Pontificia Universidad Javeriana, sede Bogotá, y que cuenta con el acompañamiento del Ministerio de Educación Nacional. Su objetivo es empoderar a los jóvenes por medio de capacitaciones virtuales en codificación y programación, desde el componente técnico. Además, tiene un componente muy interesante de habilidades blandas que les ayudan a los participantes a aplicar el conocimiento adquirido en su vida productiva, de manera más asertiva.
+Samsung Innovation Campus 2021 fue una iniciativa de la compañía tecnológica, operada por Educación Continua de la Pontificia Universidad Javeriana, sede Bogotá, y que cuenta con el acompañamiento del Ministerio de Educación Nacional. Su objetivo es empoderar a los jóvenes por medio de capacitaciones virtuales en codificación y programación, desde el componente técnico. Además, tiene un componente muy interesante de habilidades blandas que les ayudan a los participantes a aplicar el conocimiento adquirido en su vida productiva, de manera más asertiva.
 
 ### Contenidos
 
